@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}">
+    {{> head}}
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="inner-wrapper">
+        {{> header}}
+        <div class="content">
+          <div class="photo-grid">
+            <!-- .grid-sizer empty element, only used for element sizing -->
+            <div class="grid-sizer"></div>
+            {{{ contents }}}
+
+          </div>
+        </div>
+        {{> footer}}
+      </div>
+    </div>
+    <script src="/public/js/built.js"></script>
+  </body>
+</html>

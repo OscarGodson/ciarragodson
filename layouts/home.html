@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}">
+    {{> head}}
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="inner-wrapper">
+        {{> header}}
+        <div class="content">
+          <div class="splash">
+            <div class="slides">
+              {{{ contents }}}
+            </div>
+          </div>
+        </div>
+        {{> footer}}
+      </div>
+    </div>
+    <script src="/public/js/built.js"></script>
+  </body>
+</html>
